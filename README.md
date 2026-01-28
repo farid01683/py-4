@@ -51,3 +51,20 @@ while i <= 5:
   i = i+1
 
   print(i)
+
+
+
+
+
+  ******
+
+  for i in range(1,3):
+  for j in range (i):
+    print("*", end="" )
+  print()  
+
+
+for i in range(3):
+  for j in range (4):
+    print(i,j)
+  
