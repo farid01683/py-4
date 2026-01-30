@@ -73,3 +73,21 @@ for i in range(3):
   for j in range (i):
     print("*", end="" )
   print()  
+
+
+
+#choise = int(input('enter your choise(1-4):'))
+
+choice == 1
+secret = 7
+guess= 0
+print("welcome to guess the number(please guess between(1-10))")
+while guess != secret :
+  guess = int(input('enter your guess:'))
+  if guess < secret:
+    print('too low')
+  elif guess > secret:
+    print('too hige')  
+
+  else:
+    print('you won')  
