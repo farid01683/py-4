@@ -91,3 +91,42 @@ while guess != secret :
 
   else:
     print('you won')  
+
+
+
+
+
+
+
+
+
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    mini game
+
+
+    print("===========welcome to our small nintendo==========")
+print("\n choose a game: ")
+print("1. guess the number")
+print("2. even odd checker")
+print("3. multiplication checker")
+print("4. exit")
+
+
+
+choice = int(input("enter you choice(1-4):"))
+
+
+choice == 1
+secret = 7
+guess= 0
+print("welcome to guess the number(please guess between(1-10))")
+while guess != secret :
+  guess = int(input('enter your guess:'))
+  if guess < secret:
+    print('too low')
+  elif guess > secret:
+    print('too hige')
+
+  else:
+    print('you won')
