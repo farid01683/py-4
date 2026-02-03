@@ -130,3 +130,84 @@ while guess != secret :
 
   else:
     print('you won')
+
+
+
+
+
+
+  ###########################  mini game project 
+
+while True:
+  print("===========welcome to our small nintendo==========")
+  print("\n choose a game: ")
+  print("1. guess the number")
+  print("2. even odd checker")
+  print("3. multiplication checker")
+  print("4. exit")
+
+
+
+  choice = int(input("enter you choice(1-4):"))
+
+
+  if choice == 1:
+    secret = 7
+    guess= 0
+    print("welcome to guess the number(please guess between(1-10))")
+    while guess != secret :
+      guess = int(input('enter your guess:'))
+      if guess < secret:
+        print('too low')
+      elif guess > secret:
+        print('too hige')
+
+      else:
+        print('you won')
+
+
+
+      #----------------------game 2-------------
+  elif choice == 2:
+    start = int(input("Enter The Number:"))
+    end = int(input("Enter The End Number :"))
+
+    print('Even Odd Check')
+
+    for nub in range(start, end +1):
+      if nub % 2 == 0:
+        print(nub, "is even")
+      else:
+        print(nub, 'is odd')
+#------------game 3-------------
+
+  elif choice == 3:
+
+    number = int(input("Enter The End Number :"))
+
+    print(f'\n multipication table for {number}:')
+
+    for i in range(1,11):
+      result = number * i
+
+      print(f'{number} * {i} = {result}')
+
+#-------------4------
+
+  elif choice == 4:
+    print('thank you for playing')
+    break
+
+
+  else:
+    print('envalid choice') 
+
+
+
+
+
+
+
+
+
+
