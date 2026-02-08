@@ -206,7 +206,36 @@ while True:
 
 
 
+***************************
 
+
+a = int(input("enter: "))
+
+if a % 2  == 0:
+    print('even')
+else:
+    print('odd')
+
+
+
+
+
+a = int(input())
+
+for i in range(a + 1):
+  if i % 2 == 0:
+    print(i, end = " ")
+
+
+
+
+
+    a = int(input())
+i = 0
+while i <= a:
+  if i % 2 == 0:
+    print(i, end = " ")
+    i = i + 1
 
 
 
