@@ -239,4 +239,15 @@ while i <= a:
 
 
 
+a = int(input())
+i = 0
 
+if a < 0:
+  print('envalid')
+else:
+
+   while i <= a:
+     if a % 2 == 0:
+
+      print(i, end = " ")
+     i = i + 2
