@@ -251,3 +251,84 @@ else:
 
       print(i, end = " ")
      i = i + 2
+
+
+
+
+
+
+
+
+##########################################
+
+balance = 1000
+
+while True:
+    print("----- ATM MENU -----")
+    print("1. Check Balance")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        print("Check Balance")
+        print("Your current balance is:", balance)
+
+    elif choice == 2:
+        print("Deposit Money")
+        amount = float(input("Enter deposit amount: "))
+        balance = balance + amount
+        print("Deposit successful")
+        print("Updated balance:", balance)
+
+    elif choice == 3:
+        print("Withdraw Money")
+        amount = float(input("Enter withdrawal amount: "))
+        if amount <= balance:
+            balance = balance - amount
+            print("Please collect your cash")
+            print("Updated balance:", balance)
+        else:
+            print("Insufficient balance")
+            print("Current balance:", balance)
+
+    elif choice == 4:
+        print("Exit Program")
+        print("Thank you for using the ATM")
+        print("Have a nice day!")
+        break
+
+    else:
+        print("Invalid choice. Please select between 1 and 4.")
+
+    print()
+
+
+
+
+
+
+
+
+    ################################
+
+
+year = int(input("Enter a year: "))
+
+if year <= 10:
+    print("Invalid year. Please enter a valid year.")
+
+elif (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a leap year.") 
+
+elif (year % 100 == 0): 
+    if (year % 400 == 0):
+        print(year, "Century Leap Year.")
+    else:
+        print(year, "Century Year (Not Leap Year).")
+
+else:
+    print(year, "is not a leap year.")
+    
