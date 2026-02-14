@@ -332,3 +332,63 @@ elif (year % 100 == 0):
 else:
     print(year, "is not a leap year.")
     
+
+
+
+
+
+###############################
+
+
+import math
+
+print("======welcome to smart billing system======")
+
+running = True
+total = 0.0
+count = 0
+
+while running:
+
+ price = float(input("enter your price(0 to stop or exit): "))
+
+ if price == 0:
+     running = False
+
+ elif price < 0 :
+     print("price cannot be nagotable")
+ else:
+       total = total +  price
+       count = count + 1
+
+if  count == 0:
+  print('no item purched')
+
+else:
+  print('total price', total)  
+
+########### discount ###############
+  if total >= 5000:
+    discount = total * 0.20
+
+  elif total >= 3000:
+    discount = total * 0.10  
+
+  else :
+    discount = 0
+
+  afer_discount = total - discount
+
+
+##vat#############
+  vat =  afer_discount * 0.05
+
+  final_bill =  afer_discount  + vat
+
+  final_bill = round(final_bill, 2)
+
+  print('==========final_bill======')
+  print('discount:',discount )
+  print('vat:', vat)
+  print('final_bill:', final_bill)
+
